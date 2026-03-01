@@ -1,28 +1,5 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Phone, Mail, MapPin } from 'lucide-react';
-
-gsap.registerPlugin(ScrollTrigger);
-
-const footerLinks = {
-  product: {
-    title: '产品',
-    links: ['用户端小程序', '司机端APP', '运营后台', '定制开发'],
-  },
-  solutions: {
-    title: '解决方案',
-    links: ['城际拼车', '定制客运', '城际包车', '顺风车'],
-  },
-  support: {
-    title: '支持',
-    links: ['帮助中心', '使用文档', 'API接口', '联系我们'],
-  },
-  company: {
-    title: '公司',
-    links: ['关于我们', '加入我们', '新闻动态', '合作伙伴'],
-  },
-};
 
 export default function Footer() {
   const footerRef = useRef<HTMLElement>(null);
